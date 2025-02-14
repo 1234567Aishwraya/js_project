@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>main page</title>
+    <link rel="stylesheet" href="./style.css">
+
+    <link rel="stylesheet" href="./bootstrap-5.3.3-dist/bootstrap-5.3.3-dist/css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+</head>
+
+<body>
+    <!-- nav-bar start -->
+    <nav class="navbar">
+        <div class="logo">
+            <img src="./logo car.jpg" alt="image" id ="logoimage">
+        </div>
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li class="dropdown">
+                <a href="#">Car Rental ▼</a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">Car rent in Hyderbad</a></li>
+                    <li><a href="#">Car rent in Bengulur</a></li>
+                    <li><a href="#">Car rent in Chennai</a></li>
+                    <li><a href="#">Car rent in Pune</a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a href="#">Car Subscription ▼</a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">Free</a></li>
+                    <li><a href="#">Standard</a></li>
+                    <li><a href="#">Premium</a></li>
+                </ul>
+            </li>
+            <li id ="faqs_section"><a href="#">Faqs</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+    <!-- nav-bar end -->
+
+    <!-- form start -->
+    <div class="contaner-fluid">
+       <div class="form-heading">
+        <h2>Please login</h2>
+        <form id="loginform">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="enter user name" required>
+            <span class="error" id="nameError"></span>
+    
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="enter your email" required>
+            <span class="error" id="emailError"></span>
+    
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" placeholder="enter your password" required>
+            <span class="error" id="passwordError"></span>
+    
+            <button type="submit" onclick="showAlert(event)">Submit</button>
+        </form>
+    </div>
+    </div>
+   
+    <!-- form end -->
+
+    <!-- carousels start -->
+    <section id="features" class="features-section">
+        <div class="container">
+            <h2>Our Features</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <img src="b1.png" alt="Feature 1" class="feature-icon" />
+                    <h3>Easy Booking</h3>
+                    <p>Book a car easily with just a few clicks.</p>
+                </div>
+                <div class="feature-card">
+                    <img src="b2.jpg" alt="Feature 2" class="feature-icon" />
+                    <h3>Wide Variety</h3>
+                    <p>Choose from a range of cars for all your needs.</p>
+                </div>
+                <div class="feature-card">
+                    <img src="b3.png" alt="Feature 3" class="feature-icon" />
+                    <h3>Affordable Prices</h3>
+                    <p>Get the best deals at competitive rates.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- carousel end -->
+     
+    <!-- Top Selling Cars start -->
+    <div class="Top-items">
+        <h1 id="h1-heading">Top Selling Cars </h1>
+        <ol class="Top">
+
+            <li class="Top-cars">
+                <div class="car-card">
+                    <div class="car-data">
+                        <div>
+                            <h3 class="car-name">Baleno AT</h3>
+                            <p class="car-brand">Maruti</p>
+                        </div>
+                        <img src="./mariti4.jpg" alt="Baleno AT" class="car-image">
+                    </div>
+                    <div class="car-details">
+                        <span><i class="fa fa-car"></i> Hatchback</span>
+                        <span><i class="fa fa-cogs"></i> Automatic</span>
+                        <span><i class="fa fa-users"></i> 5 seats</span>
+                    </div>
+                    <button class="car-price">
+                        <a href="#" class="price-link">₹ 3000 <span>per day</span></a>
+                    </button>
+                    
+                </div>
+            </li>
+            <li class="Top-cars">
+                <div class="car-card">
+                    <div class="car-data">
+                        <div>
+                            <h3 class="car-name">Swift</h3>
+                            <p class="car-brand">Maruti</p>
+                        </div>
+                        <img src="./mahendra2.jpg" alt="Baleno AT" class="car-image">
+                    </div>
+                    <div class="car-details">
+                        <span><i class="fa fa-car"></i> Hatchback</span>
+                        <span><i class="fa fa-cogs"></i> Automatic</span>
+                        <span><i class="fa fa-users"></i> 5 seats</span>
+                    </div>
+                    <button class="car-price">
+                        <a href="#" class="price-link">₹ 6000 <span>per day</span></a>
+                    </button>
+                    
+                </div>
+            </li>
+            <li class="Top-cars">
+                <div class="car-card">
+                    <div class="car-data">
+                        <div>
+                            <h3 class="car-name">Alto K10</h3>
+                            <p class="car-brand">Maruti</p>
+                        </div>
+                        <img src="./maruti1.jpg" alt="Baleno AT" class="car-image">
+                    </div>
+                    <div class="car-details">
+                        <span><i class="fa fa-car"></i> Hatchback</span>
+                        <span><i class="fa fa-cogs"></i> Automatic</span>
+                        <span><i class="fa fa-users"></i> 5 seats</span>
+                    </div>
+                    <button class="car-price">
+                        <a href="#" class="price-link">₹ 5000 <span>per day</span></a>
+                    </button>
+                    
+                </div>
+            </li>
+        </ol>
+    </div>
+    <!-- Top selling Cars end -->
+     <!-- information start-->
+    <div class="matter">
+        <h2>Popular car types in Coimbatore</h2>
+        <div class="one">
+            <div>
+                <h3>By seating type</h3>
+                <ul>
+                    <li>5 seater self drive car rental in Coimbatore</li>
+                    <li>7 seater self drive car rental in Coimbatore</li>
+                </ul>
+            </div>
+            <div>
+                <h3>By body type</h3>
+                <ul>
+                    <li>Hatchback self drive car rental in Coimbatore</li>
+                    <li>SUV self drive car rental in Coimbatore</li>
+                    <li>Sedan self drive car rental in Coimbatore</li>
+                </ul>
+            </div>
+            <div>
+                <h3>By make</h3>
+                <ul>
+                    <li>Maruti cars for self drive rental in Coimbatore</li>
+                    <li>Hyundai cars for self drive rental in Coimbatore</li>
+                    <li>Mahindra cars for self drive rental in Coimbatore</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- information end -->
+     
+    <!-- feedback section -->
+    <div class="feedback">
+        <div class="back">
+            <span><i class="bi bi-emoji-smile-fill"></i></span>
+            <h2><b>1 Mn +</b></h2>
+            <p>Happy Coustmers</p>
+        </div>
+
+        <div class="back">
+            <span><i class="bi bi-geo-alt-fill"></i></span>
+            <h2><b>22+ Cities</b></h2>
+            <p>Across India</p>
+        </div>
+
+        <div class="back">
+            <span><i class="bi bi-car-front-fill"></i></span>
+            <h2><b>50 Mn+</b></h2>
+            <p>Kms Travelled</p>
+        </div>
+
+        <div class="back">
+            <span><i class="bi bi-star-fill"></i></span>
+            <h2><b>4.8/5</b></h2>
+            <p>50K+ Reviewers</p>
+        </div>
+    </div>
+    </div>
+    <!-- feedback end -->
+   
+    <!-- footer section -->
+    <footer class="footer">
+        <div class="contact">
+            <h2>Car Rental</h2>
+            <p>
+                <span>&#128222; 022 6723 1000</span><br>
+                <span>&#128231; carrental@gmail.com</span>
+            </p>
+        </div>
+
+        <div class="subsidiaries">
+            <h3>Car Rental Locations</h3>
+            <p>Speedy Rentals, Hyderbad, Telangana</p>
+            <p>Global Drive, Bengulur, Karnataka</p>
+            <p>Urban Wheels, Pune </p>
+            <p>QuickRide, Chennai</p>
+        </div>
+
+        <div class="social">
+            <h3>Follow Us On Social</h3>
+            <p>Stay connected and follow us on social media for the latest updates and news.</p>
+            <div class="social-icons">
+                <a href="#">&#x1F4C8;</a> <!-- LinkedIn -->
+                <a href="#">&#x1F426;</a> <!-- Twitter -->
+                <a href="#">&#x1F4FA;</a> <!-- YouTube -->
+                <a href="#">&#x1F4F1;</a> <!-- Facebook -->
+            </div>
+        </div>
+    </footer>
+    <!-- footer section end -->
+    <!-- carousels start -->
+
+    <!-- carosels end -->
+
+
+    <script src="./bootstrap-5.3.3-dist/bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./index.js"></script>
+</body>
+
+</html>
