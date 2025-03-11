@@ -5,7 +5,7 @@ const carId = urlParams.get('id');
 // Fetch car data
 async function fetchCarDetails() {
   try {
-    const res = await fetch("http://localhost:3000/cars");
+    const res = await fetch("https://raw.githubusercontent.com/1234567Aishwraya/js_project/refs/heads/main/db.json");
     const data = await res.json();
 
     let cars;

@@ -3,7 +3,7 @@ let allCars = [];
 // Fetch car data from API
 async function fetchData() {
   try {
-    const res = await fetch("http://localhost:3000/cars");
+    const res = await fetch("https://raw.githubusercontent.com/1234567Aishwraya/js_project/refs/heads/main/db.json");
     const data = await res.json();
 
     // Handle both array and object formats
